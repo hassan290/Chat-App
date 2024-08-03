@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> screens = const [
     MenuScreen(),
-    ChatScreen(),
+    ChatScreen(isHideMode: false,),
     FavoriteScreen(),
     SettingsScreen()
   ];

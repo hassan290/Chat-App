@@ -1,3 +1,4 @@
+import 'package:chat_task/features/screens/chat/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -63,7 +64,9 @@ class BodyDialogWidget extends StatelessWidget {
                   width: 343.w,
                   height: 50.h,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ChatScreen(isHideMode: true,)));
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: TColors.buyButtonColor,
                     ),

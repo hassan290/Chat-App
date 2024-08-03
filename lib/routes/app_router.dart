@@ -15,7 +15,7 @@ class AppRouter {
         );
       case Routes.chat:
         return MaterialPageRoute(
-          builder: (_) => const ChatScreen(),
+          builder: (_) => const ChatScreen(isHideMode: false,),
         );
       case Routes.startChat:
         return MaterialPageRoute(

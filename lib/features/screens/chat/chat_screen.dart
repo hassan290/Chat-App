@@ -7,7 +7,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../common/widgets/custom_shapes/header_chat_widget.dart';
 
 class ChatScreen extends StatelessWidget {
-  const ChatScreen({super.key});
+  const ChatScreen({super.key, required this.isHideMode});
+
+  final bool isHideMode;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class ChatScreen extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 16.h),
                 child: Column(
                   children: [
-                    const HeaderChatWidget(),
+                    HeaderChatWidget(isHideMode: isHideMode,),
                     SizedBox(height: 16.h),
                     const LikesHeaderWidget(),
                     SizedBox(height: 16.h),

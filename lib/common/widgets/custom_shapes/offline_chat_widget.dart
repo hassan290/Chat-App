@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../utils/constants/colors.dart';
 
-class SmallMaskWidget extends StatelessWidget {
-  const SmallMaskWidget({
+class OfflineChatWidget extends StatelessWidget {
+  const OfflineChatWidget({
     super.key,
   });
 
@@ -23,9 +23,9 @@ class SmallMaskWidget extends StatelessWidget {
           ),
         ),
         Positioned(
-          left: 5.w,
-          top: 4.5.h,
-          child: Image(image: const AssetImage('assets/images/mask/mask_small.png'),height: 12.h,width: 30.w,fit: BoxFit.contain,),
+          left: 2.w,
+          top: 0.5.h,
+          child: const Icon(Icons.mic_off,size: 20,color: TColors.letterBorderColor,),
         ),
       ],
     );
